@@ -1,0 +1,23 @@
+import { useState, useEffect } from "react";
+
+// A custom hook to manage localStorage with React state
+export function useLocalStorage<T>(key: string, initialValue: T) {
+  const [value, setValue] = useState<T>(() => {
+    try {
+      const stored = localStorage.getItem(key);
+      return stored ? JSON.parse(stored) : initialValue;
+    } catch {
+      return initialValue;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch {
+      console.error("Error saving to localStorage");
+    }
+  }, [key, value]);
+
+  return [value, setValue] as const;
+}

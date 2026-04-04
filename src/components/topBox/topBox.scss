@@ -1,0 +1,64 @@
+@use "../../styles/responsive" as *;
+
+.topBox {
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    @include sm {
+      font-size: 20px;
+    }
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    .listItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .itemContent {
+        display: flex;
+        gap: 10px;
+        .userImage {
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            @include sm {
+              width: 32px;
+              height: 32px;
+            }
+          }
+        }
+        .userInfo {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          .userName {
+            font-size: 14px;
+            font-weight: 500;
+            @include sm {
+              font-size: 12px;
+              font-weight: 400;
+            }
+          }
+          .userEmail {
+            font-size: 12px;
+            @include sm {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      .itemAmount {
+        font-weight: 500;
+        @include sm {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

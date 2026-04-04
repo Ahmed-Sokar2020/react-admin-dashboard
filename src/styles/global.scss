@@ -1,0 +1,98 @@
+@use "./variables" as *;
+@use "./responsive" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $bg-light-theme;
+  color: $text-color-light-theme;
+  scroll-behavior: smooth;
+}
+
+body.dark {
+  background-color: $bg-dark-theme;
+  color: $text-color-dark-theme;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.settings {
+  .setting-icon {
+    fill: #000;
+  }
+}
+
+body.dark {
+  .navbar {
+    .icon {
+      stroke: #fff;
+    }
+  }
+}
+
+body.dark {
+  .app-icon,
+  .expand-icon,
+  .setting-icon {
+    fill: #fff;
+  }
+}
+
+body.dark {
+  .notifications-icon {
+    fill: none;
+  }
+}
+
+.main {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.menuContainer {
+  background-color: $bg-dark-theme;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  @include lg {
+    width: max-content;
+  }
+  @include sm {
+    padding: 10px;
+  }
+}
+
+body.dark {
+  .menuContainer {
+    padding: 0 20px 0 0;
+    border-radius: 0;
+    border-right: 2px solid $soft-bg;
+  }
+}
+.contentContainer {
+  padding: 0 0 0 20px;
+  min-width: 800px;
+  @include xl {
+    min-width: 250px;
+  }
+}

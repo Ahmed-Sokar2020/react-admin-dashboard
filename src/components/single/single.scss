@@ -1,0 +1,104 @@
+@use "../../styles/responsive" as *;
+
+.single {
+  display: flex;
+  @include xl {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .view {
+    flex: 1;
+    .info {
+      .topInfo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        img {
+          width: 90px;
+          height: 90px;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+        h2 {
+          font-weight: bold;
+          font-size: 16px;
+        }
+        button {
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+      .details {
+        font-size: 18px;
+        .item {
+          margin: 20px 0;
+          .itemTitle {
+            font-weight: 500;
+            margin-right: 10px;
+            text-transform: capitalize;
+          }
+          .itemValue {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    hr {
+      width: 90%;
+      height: 0;
+      border: 0.5px solid gray;
+      margin: 20px 0;
+      @include md {
+        display: none;
+      }
+    }
+    .chart {
+      margin-top: 50px;
+      width: 80%;
+      height: 400px;
+      @include md {
+        display: none;
+      }
+    }
+  }
+  .activities {
+    flex: 1;
+    h2 {
+      margin-bottom: 20px;
+    }
+    ul {
+      li {
+        list-style-type: none;
+        position: relative;
+        width: 1px;
+        padding-top: 50px;
+        background-color: #f45b69;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #f45b69;
+          transform: translateX(-50%);
+        }
+        .activitiesContent {
+          min-width: 400px;
+          padding: 15px;
+          background-color: #f45b6810;
+          @include md {
+            min-width: 250px;
+          }
+          p {
+            margin-bottom: 5px;
+          }
+          time {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@use "../../styles/responsive" as *;
+
+.lineChartBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  height: 100%;
+  @include sm {
+    flex-direction: column;
+  }
+  .boxInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: space-between;
+    @include sm {
+      gap: 20px;
+    }
+    .title {
+      display: flex;
+      gap: 5px;
+      @include xxl {
+        font-size: 14px;
+      }
+      span {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      img {
+        width: 38px;
+        height: 38px;
+        object-fit: cover;
+      }
+    }
+
+    @include xxl {
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    .link:hover {
+      opacity: 0.7;
+    }
+  }
+  .chartInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+    .chart {
+      width: 100%;
+      height: 100%;
+    }
+    .texts {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      .percentage {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .duration {
+        font-size: 14px;
+      }
+    }
+  }
+}

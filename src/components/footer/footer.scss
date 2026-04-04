@@ -1,0 +1,49 @@
+@use "../../styles/responsive" as *;
+@use "../../styles/variables" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  span {
+    &:first-child {
+      font-weight: 400;
+      color: $text-color-footer;
+      a {
+        color: $main-bg;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &:last-child {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  @include sm {
+    span:last-child {
+      font-size: 14px;
+    }
+  }
+}
+@include sm {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+body.dark {
+  .footer {
+    span {
+      &:first-child,
+      a {
+        color: $text-color-dark-theme;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use "../../styles/variables" as *;
+@use "../../styles/responsive" as *;
+
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    .itemTitle {
+      font-weight: 200;
+      font-size: 16px;
+      color: $soft-color;
+      text-transform: uppercase;
+      @include lg {
+        display: none;
+      }
+    }
+    .listItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px;
+      .listItemTitle {
+        font-weight: 500;
+        font-size: 14px;
+      }
+      &:hover {
+        background-color: $soft-bg;
+        border-radius: 5px;
+      }
+      .listItemTitle {
+        @include lg {
+          display: none;
+        }
+      }
+    }
+  }
+}
