@@ -53,34 +53,6 @@ This project focuses heavily on performance:
 
 ---
 
-## 📂 Project Structure
-
-src/
-│
-├── components/
-│ ├── charts/
-│ ├── menu/
-│ └── navbar/
-│
-├── pages/
-│ └── home/
-│ └── products/
-│ └── users/
-│
-├── hooks/
-│ └── useLocalStorage.ts
-│ └── useThemeEffect.ts
-│
-├── context/
-│ └── ThemeContext.tsx
-│ └── ThemeProvider.tsx
-│
-├── data/
-│
-└── styles/
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
