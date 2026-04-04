@@ -3,7 +3,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/react-admin-dashboard/",
   plugins: [react(), purgeCss({})],
   build: {
     chunkSizeWarningLimit: 1000,
