@@ -38,38 +38,43 @@ const Layout = () => {
 };
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Layout />,
+        children: [
+          {
+            path: "/",
+            element: <Home />,
+          },
+          {
+            path: "/users",
+            element: <Users />,
+          },
+          {
+            path: "/products",
+            element: <Products />,
+          },
+          {
+            path: "/products/:id",
+            element: <Product />,
+          },
+          {
+            path: "/users/:id",
+            element: <User />,
+          },
+          {
+            path: "*",
+            element: <NotFound />,
+          },
+        ],
+      },
+    ],
     {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/users",
-          element: <Users />,
-        },
-        {
-          path: "/products",
-          element: <Products />,
-        },
-        {
-          path: "/products/:id",
-          element: <Product />,
-        },
-        {
-          path: "/users/:id",
-          element: <User />,
-        },
-        {
-          path: "*",
-          element: <NotFound />,
-        },
-      ],
+      basename: "/react-admin-dashboard",
     },
-  ]);
+  );
 
   return (
     <Suspense fallback={<LoadingSpinner />}>
