@@ -1,3 +1,25 @@
+import homeIcon from "@/assets/icons/home.svg";
+import profileIcon from "@/assets/icons/profile.svg";
+import usersIcon from "@/assets/icons/user.svg";
+import productsIcon from "@/assets/icons/product.svg";
+import ordersIcon from "@/assets/icons/order.svg";
+import postsIcon from "@/assets/icons/post2.svg";
+import elementsIcon from "@/assets/icons/element.svg";
+import notsIcon from "@/assets/icons/note.svg";
+import formsIcon from "@/assets/icons/form.svg";
+import calenderIcon from "@/assets/icons/calendar.svg";
+import settingsIcon from "@/assets/icons/setting.svg";
+import backupsIcon from "@/assets/icons/backup.svg";
+import chartsIcon from "@/assets/icons/chart.svg";
+import logsIcon from "@/assets/icons/log.svg";
+
+import userIcon from "@/assets/icons/userIcon.svg";
+import productIcon from "@/assets/icons/productIcon.svg";
+import revenueIcon from "@/assets/icons/revenueIcon.svg";
+import conversionIcon from "@/assets/icons/conversionIcon.svg";
+
+import ahmedImg from "@/assets/images/ahmed.jpg";
+
 export const menu = [
   {
     id: 1,
@@ -7,13 +29,13 @@ export const menu = [
         id: 1,
         title: "Homepage",
         url: "/",
-        icon: "/icons/home.svg",
+        icon: homeIcon,
       },
       {
         id: 2,
         title: "Profile",
         url: "/users/1",
-        icon: "/icons/profile.svg",
+        icon: profileIcon,
       },
     ],
   },
@@ -25,25 +47,25 @@ export const menu = [
         id: 1,
         title: "Users",
         url: "/users",
-        icon: "/icons/user.svg",
+        icon: usersIcon,
       },
       {
         id: 2,
         title: "Products",
         url: "/products",
-        icon: "/icons/product.svg",
+        icon: productsIcon,
       },
       {
         id: 3,
         title: "Orders",
         url: "/orders",
-        icon: "/icons/order.svg",
+        icon: ordersIcon,
       },
       {
         id: 4,
         title: "Posts",
         url: "/posts",
-        icon: "/icons/post2.svg",
+        icon: postsIcon,
       },
     ],
   },
@@ -55,25 +77,25 @@ export const menu = [
         id: 1,
         title: "Elements",
         url: "/",
-        icon: "/icons/element.svg",
+        icon: elementsIcon,
       },
       {
         id: 2,
         title: "Notes",
         url: "/",
-        icon: "/icons/note.svg",
+        icon: notsIcon,
       },
       {
         id: 3,
         title: "Forms",
         url: "/",
-        icon: "/icons/form.svg",
+        icon: formsIcon,
       },
       {
         id: 4,
         title: "Calendar",
         url: "/",
-        icon: "/icons/calendar.svg",
+        icon: calenderIcon,
       },
     ],
   },
@@ -85,13 +107,13 @@ export const menu = [
         id: 1,
         title: "Settings",
         url: "/",
-        icon: "/icons/setting.svg",
+        icon: settingsIcon,
       },
       {
         id: 2,
         title: "Backups",
         url: "/",
-        icon: "/icons/backup.svg",
+        icon: backupsIcon,
       },
     ],
   },
@@ -103,13 +125,13 @@ export const menu = [
         id: 1,
         title: "Charts",
         url: "/",
-        icon: "/icons/chart.svg",
+        icon: chartsIcon,
       },
       {
         id: 2,
         title: "Logs",
         url: "/",
-        icon: "/icons/log.svg",
+        icon: logsIcon,
       },
     ],
   },
@@ -118,7 +140,7 @@ export const menu = [
 export const topDealUsers = [
   {
     id: 1,
-    img: "/images/ahmed.jpg",
+    img: ahmedImg,
     username: "Ahmed sokkar",
     email: "sokkar@gmail.com",
     amount: "5.668",
@@ -169,7 +191,7 @@ export const topDealUsers = [
 
 export const lineChartBoxUser = {
   color: "#8884d8",
-  icon: "icons/userIcon.svg",
+  icon: userIcon,
   title: "Total Users",
   number: 11.23,
   dataKey: "users",
@@ -187,7 +209,7 @@ export const lineChartBoxUser = {
 
 export const lineChartBoxProduct = {
   color: "skyblue",
-  icon: "icons/productIcon.svg",
+  icon: productIcon,
   title: "Total Products",
   number: "136",
   dataKey: "products",
@@ -205,7 +227,7 @@ export const lineChartBoxProduct = {
 
 export const lineChartBoxRevenue = {
   color: "teal",
-  icon: "icons/revenueIcon.svg",
+  icon: revenueIcon,
   title: "Total Revenue",
   number: "$145.8",
   dataKey: "revenue",
@@ -223,7 +245,7 @@ export const lineChartBoxRevenue = {
 
 export const lineChartBoxConversion = {
   color: "gold",
-  icon: "icons/conversionIcon.svg",
+  icon: conversionIcon,
   title: "Total Ratio",
   number: 5.25,
   dataKey: "ratio",
@@ -274,7 +296,7 @@ export const barChartBoxRevenue = {
 export const userRows = [
   {
     id: 1,
-    img: "images/ahmed.jpg",
+    img: ahmedImg,
     lastName: "Sokkar",
     firstName: "Ahmed",
     email: "sok@@gmail.com",

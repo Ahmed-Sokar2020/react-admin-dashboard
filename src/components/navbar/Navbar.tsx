@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import "./navbar.scss";
 import ThemeToggleIcon from "../themeToggleIcon/ThemeToggleIcon";
-import logoIcon from "/icons/logo.svg";
+import logoIcon from "@/assets/icons/logo.svg";
+import ahmedImg from "@/assets/images/ahmed.jpg";
 
 const Navbar = () => {
   return (
@@ -87,7 +88,7 @@ const Navbar = () => {
         </div>
 
         <div className="user">
-          <img src="/images/ahmed.jpg" alt="" loading="lazy" />
+          <img src={ahmedImg} alt="" loading="lazy" />
           <span>Ahmed</span>
         </div>
 

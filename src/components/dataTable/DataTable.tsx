@@ -4,6 +4,9 @@ import "./dataTable.scss";
 import { GridToolbar } from "@mui/x-data-grid/internals";
 import { Link } from "react-router-dom";
 
+import viewIcon from "@/assets/icons/view.svg";
+import deleteIcon from "@/assets/icons/delete.svg";
+
 type UserDataTableProps = {
   columns: GridColDef[];
   rows: object[];
@@ -27,11 +30,11 @@ const DataTable = ({ columns, rows, slug }: UserDataTableProps) => {
         <div className="actions">
           {/* Link to navigate to the (User or Product) page */}
           <Link to={`/${slug}/${params.row.id}`}>
-            <img src="/icons/view.svg" alt="" loading="lazy" />
+            <img src={viewIcon} alt="" loading="lazy" />
           </Link>
 
           <div className="delete" onClick={() => handelDelete(params.row.id)}>
-            <img src="/icons/delete.svg" alt="" loading="lazy" />
+            <img src={deleteIcon} alt="" loading="lazy" />
           </div>
         </div>
       );
