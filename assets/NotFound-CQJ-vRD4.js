@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-D-oznMWL.js";import"./react-DcCgrBX5.js";import{f as t}from"./index-0yYFiV8D.js";var n=e(),r=()=>(0,n.jsxs)(`div`,{className:`notFound`,children:[(0,n.jsx)(`h1`,{children:`404`}),(0,n.jsx)(`p`,{children:`Oops! The page you’re looking for doesn’t exist.`}),(0,n.jsx)(t,{to:`/`,children:`Back to Dashboard`})]});export{r as default};
