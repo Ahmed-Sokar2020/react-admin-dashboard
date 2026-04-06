@@ -13,7 +13,7 @@ Designed with scalability, performance, and clean UI/UX in mind.
 
 ## 📸 Preview
 
-![Dashboard Preview] 👉 (/public/images/preview-dashboard.png)
+![Dashboard Preview] 👉 (@/assets/images/preview-dashboard.png)
 
 ---
 
