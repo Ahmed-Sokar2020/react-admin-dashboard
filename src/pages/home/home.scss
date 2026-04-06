@@ -29,17 +29,14 @@
   .box:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   }
-  .box1 {
+
+  .box1,
+  .box3 {
     grid-column: span 1;
     grid-row: span 3;
   }
 
-  .box4 {
-    grid-column: span 1;
-    grid-row: span 3;
-  }
-
-  .box7 {
+  .box2 {
     grid-column: span 2;
     grid-row: span 2;
     @include md {

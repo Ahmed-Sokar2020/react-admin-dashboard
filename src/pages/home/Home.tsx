@@ -39,47 +39,48 @@ const Home = () => {
 
       <div className="box box2">
         <Suspense fallback={<BoxSkeleton />}>
-          <LineChartBox {...lineChartBoxUser} />
+          <AreaChartBox />
         </Suspense>
       </div>
 
       <div className="box box3">
         <Suspense fallback={<BoxSkeleton />}>
-          <LineChartBox {...lineChartBoxProduct} />
+          <PieChartBox />
         </Suspense>
       </div>
 
       <div className="box box4">
         <Suspense fallback={<BoxSkeleton />}>
-          <PieChartBox />
+          <BarChartBox {...barChartBoxRevenue} />
         </Suspense>
       </div>
 
       <div className="box box5">
         <Suspense fallback={<BoxSkeleton />}>
-          <LineChartBox {...lineChartBoxConversion} />
+          <BarChartBox {...barChartBoxVisit} />
         </Suspense>
       </div>
 
       <div className="box box6">
         <Suspense fallback={<BoxSkeleton />}>
-          <LineChartBox {...lineChartBoxRevenue} />
+          <LineChartBox {...lineChartBoxProduct} />
         </Suspense>
       </div>
 
       <div className="box box7">
-        <AreaChartBox />
-        <Suspense fallback={<BoxSkeleton />}></Suspense>
+        <Suspense fallback={<BoxSkeleton />}>
+          <LineChartBox {...lineChartBoxUser} />
+        </Suspense>
       </div>
       <div className="box box8">
         <Suspense fallback={<BoxSkeleton />}>
-          <BarChartBox {...barChartBoxVisit} />
+          <LineChartBox {...lineChartBoxConversion} />
         </Suspense>
       </div>
 
       <div className="box box9">
         <Suspense fallback={<BoxSkeleton />}>
-          <BarChartBox {...barChartBoxRevenue} />
+          <LineChartBox {...lineChartBoxRevenue} />
         </Suspense>
       </div>
     </div>

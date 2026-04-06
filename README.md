@@ -13,7 +13,7 @@ Designed with scalability, performance, and clean UI/UX in mind.
 
 ## 📸 Preview
 
-👉 ![Dashboard Preview](src/assets/images/preview-dashboard.png)
+![Dashboard Preview](src/assets/images/preview-dashboard.png)
 
 ---
 
@@ -56,7 +56,7 @@ This project focuses heavily on performance:
 ## 🚀 Getting Started
 
 ```bash
- 1. Clone the repository
+1. Clone the repository
 git clone https://github.com/your-username/your-repo.git
 
 2. Install dependencies
@@ -69,6 +69,7 @@ npm run dev
 npm run build
 
 ////////////////////////////////////////////////////////////
+
 ⭐ Support
 If you like this project, feel free to:
 

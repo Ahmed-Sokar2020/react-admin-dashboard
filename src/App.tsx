@@ -13,7 +13,7 @@ const Products = lazy(() => import("./pages/products/Products"));
 const Users = lazy(() => import("./pages/users/Users"));
 const User = lazy(() => import("./pages/user/User"));
 const Product = lazy(() => import("./pages/product/Product"));
-const NotFound = lazy(() => import("./pages/not-found/NotFound")); // renamed folder to not-found
+const NotFound = lazy(() => import("./pages/not-found/NotFound"));
 
 // Layout component
 const Layout = () => {
