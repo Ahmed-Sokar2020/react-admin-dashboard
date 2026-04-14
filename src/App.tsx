@@ -52,7 +52,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    // Set basename dynamically for GitHub Pages
+    // Set basename dynamically to avoid conflicts in GitHub Pages
     basename: import.meta.env.PROD ? "/react-admin-dashboard" : "/",
   },
 );

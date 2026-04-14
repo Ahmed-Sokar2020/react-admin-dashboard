@@ -80,3 +80,4 @@ If you like this project, feel free to:
 
 - GitHub repo link: https://github.com/Ahmed-Sokar2020/react-admin-dashboard
 - LinkedIn link: https://www.linkedin.com/in/ahmed-sokar
+- Portfolio link: https://ahmed-sokar2020.github.io/react-personal-portfolio
